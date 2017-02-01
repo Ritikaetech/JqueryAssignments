@@ -1,0 +1,2 @@
+# JqueryAssignments
+assignments on jquery
