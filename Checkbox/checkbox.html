@@ -1,0 +1,56 @@
+<html>
+	<head>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+ 		<script type="text/javascript" src="checkbox.js"></script>
+ 		<style type="text/css">
+ 		.container{
+ 			background-color: #dee2e8;
+ 			color: black;
+ 			font-size: 20px;
+ 			margin-left: 150px;
+ 			width:300px;
+ 			padding: 25px;
+ 		}
+ 		.childspan {
+ 			margin-left: 35px;
+ 		}
+ 		ul{
+ 			list-style: none;
+
+ 		}
+
+ 		</style> 
+	</head>
+	<body>
+		<div class="container">
+			<h3>Manage permissions</h3>
+			<HR>
+			<select><option>subsubfg</option></select><br><br>
+			<ul>
+  				 <li><input type="checkbox" class="parent">Property
+          			  <ul>
+             		     <li><input type="checkbox" class="child">Edit Property</li>
+               			 <li><input type="checkbox" class="child">Remove Property</li>
+                 		 <li><input type="checkbox" class="child">Add Property</li>
+           			 </ul>
+                 </li>
+                 <li><input type="checkbox" class="parent">Testimonial
+               		  <ul>
+                		 <li><input type="checkbox" class="child">Add</li>
+                		 <li><input type="checkbox" class="child">Remove</li>
+                		 <li><input type="checkbox" class="child">View</li>
+                		 <li><input type="checkbox" class="child">Edit</li>
+               		  </ul>
+          		 </li>
+            </ul>
+
+
+		
+			<br>
+			
+			<br>
+			<input type="submit" value="Submit">
+		</div>
+			
+	</body>
+</html>
