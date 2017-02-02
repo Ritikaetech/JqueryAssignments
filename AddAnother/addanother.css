@@ -1,0 +1,39 @@
+body{
+	display: inline-block;
+}
+.container1{
+
+	
+	border: 1px solid gray;
+	color: black;
+	display: inline-block;
+}
+.container2{
+
+	width: 100%;
+	border: 1px solid gray;
+	color: black;
+	display: inline-block;
+}
+.Propertyimage{
+	text-align: center;
+	vertical-align: center;
+}
+
+.col-md-3{
+	vertical-align: center;
+	padding-top: 15px; 
+	font-size: 20px;
+	color: gray;
+
+}
+.col-md-9{
+	display: inline;
+	border-left: 1px solid gray;
+	padding: 25px;
+
+}
+input{
+	float: left;
+}
+
