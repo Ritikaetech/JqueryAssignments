@@ -14,13 +14,9 @@
  		.childspan {
  			margin-left: 35px;
  		}
- 		.childspan2 {
- 			margin-left: 35px;
- 		}
- 		.childspan3 {
- 			margin-left: 35px;
- 		}.childspan4 {
- 			margin-left: 35px;
+ 		ul{
+ 			list-style: none;
+
  		}
 
  		</style> 
@@ -30,37 +26,31 @@
 			<h3>Manage permissions</h3>
 			<HR>
 			<select><option>subsubfg</option></select><br><br>
-			<div id="PropertyParent">
-				<input type="checkbox" id="property"> <label>Property</label><br>
-				<span><input type="checkbox" id="editproperty"  class="childspan"> <label>Edit Property</label><br></span>
-				<span><input type="checkbox" id="addproperty"  class="childspan"> <label>Add Property</label><br></span>
-				<span><input type="checkbox" id="removeproperty"  class="childspan"> <label>Remove Property</label><br></span>	
-			</div>
+			<ul>
+  				 <li><input type="checkbox" class="parent">Property
+          			  <ul>
+             		     <li><input type="checkbox" class="child">Edit Property</li>
+               			 <li><input type="checkbox" class="child">Remove Property</li>
+                 		 <li><input type="checkbox" class="child">Add Property</li>
+           			 </ul>
+                 </li>
+                 <li><input type="checkbox" class="parent">Testimonial
+               		  <ul>
+                		 <li><input type="checkbox" class="child">Add</li>
+                		 <li><input type="checkbox" class="child">Remove</li>
+                		 <li><input type="checkbox" class="child">View</li>
+                		 <li><input type="checkbox" class="child">Edit</li>
+               		  </ul>
+          		 </li>
+            </ul>
+
+
+		
 			<br>
-			<div id="TestimonialParent">
-				<input type="checkbox" id="testimonials" name=""> <label>Testimonial</label><br>
-				<span><input type="checkbox" id="edit"  class="childspan2"> <label>Edit</label><br></span>
-				<span><input type="checkbox" id="view"  class="childspan2"> <label>View</label><br></span>
-				<span><input type="checkbox" id="add"  class="childspan2"> <label>Add</label><br></span>
-				<span><input type="checkbox" id="remove"  class="childspan2"> <label>Remove</label><br></span>	
-			</div>
-			<br>
-			<div id="UsersParent">
-				<input type="checkbox" id="users"> <label>Users</label><br>
-				<span><input type="checkbox" id="edituser"  class="childspan3"> <label>Edit User</label><br></span>
-				<span><input type="checkbox" id="viewuser"  class="childspan3"> <label>View User List</label><br></span>
-				<span><input type="checkbox" id="adduser"  class="childspan3"> <label>Add User</label><br></span>	
-			</div>
-			<br>
-			<div id="MembershipParent">
-				<input type="checkbox" id="Membership"> <label>Membership</label><br>
-				<span><input type="checkbox" id="editmembership"  class="childspan4"> <label>Edit membership</label><br></span>
-				<span><input type="checkbox" id="addmembership" class="childspan4"> <label>Add membership</label><br></span>
-				<span><input type="checkbox" id="removemembership" class="childspan4"> <label>Remove membership</label><br></span>	
-			</div>
+			
 			<br>
 			<input type="submit" value="Submit">
 		</div>
-
+			
 	</body>
 </html>
