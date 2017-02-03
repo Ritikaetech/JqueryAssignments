@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <title>jQuery Nivo Slider</title>
+ <link rel="stylesheet" href="nivoslider/nivo-slider.css" type="text/css" media="screen" />
+ <link rel="stylesheet" href="nivoslider/themes/default.css" type="text/css" media="screen" />
+ <style>
+  *{margin:0px; padding:0px;}
+  .nature{width:100%; height: 500px; background-repeat:no-repeat; margin:auto;}
+ </style>
+</head>
+<body style="background-color:#ECF9EF;">
+  <div id="wrapper">
+   <div class="slider-wrapper theme-default">
+    <div id="slider" class="nivoSlider" style="width:1000px; height:500px; margin:auto;">
+     <img src="image/image1.jpg" class="nature" />
+     <img src="image/image2.jpeg" class="nature" />
+     <img src="image/image3.jpg" class="nature" />
+   
+    </div>
+   </div>
+  </div>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+ <script type="text/javascript" src="nivoslider/jquery.nivo.slider.js"></script>
+ <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+ </script>
+</body>
+</html>
