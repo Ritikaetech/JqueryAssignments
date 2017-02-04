@@ -1,0 +1,29 @@
+<html>
+ <head>
+   <title>JSON Objects</title>
+   <script>
+     var Info = {"First_Name" : "John", "Last_Name" : "Dell","Age":17, "Date_of_Birth" : "16-07-2000"};
+   </script>
+</head>
+<body>
+  <div id="main">
+  </div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+   var information = "";
+  function showDetails(person)
+   {
+   
+    information = information+ "First Name = " + Info.First_Name + "<br />";
+    information = information+ "Last Name = " + Info.Last_Name + "<br />";
+    information = information+ "Age = " + Info.Age + "<br />";
+    information = information+ "Date of Birth = " + Info.Date_of_Birth + "<br />";
+
+   }
+   $(document).ready(function () {
+     showDetails(Info);
+     $('#main').html(information);
+    });
+</script>  
+</html>
