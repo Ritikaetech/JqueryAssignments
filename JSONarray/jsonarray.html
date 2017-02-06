@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+ <head>
+  <title>JSON Assignment2</title>
+  <style>
+   #show_div{width:500px; height:280px; border:1px solid gray; background-color:lightgray; text-align:center;}
+  </style>
+  <script> 
+   var person = {"details":[
+      {"first_name":"Ross" , "last_name":"Geller", "date_of_birth":"09/01/1956"},
+      {"first_name":"Joe" , "last_name":"Tribbiani", "date_of_birth":"09/09/1952"},
+      {"first_name":"Chandler" , "last_name":"Bing", "date_of_birth":"11/11/1949"}
+     ]}
+  </script>
+ </head>
+ <body>
+  <div id="show_div">
+  </div>
+ </body>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>
+  var display="";
+  display="<h1>Student Details</h1>";
+  display = display +
+                "<table border=1 width='400' align='center'>" +
+                  "<tr>" +
+                    "<th width='33%'>First Name</th>" +
+                    "<th width='34%'>Last Name</th>" +
+                    "<th width='33%'>Date of Birth</th>" +
+                  "</tr>"
+                "</table>";
+  function procedure(person)
+   {
+    var i=0;
+    while(i<person.details.length)
+     {
+      display = display + 
+                  "<table border=1 width='400' align='center'>" +
+                    "<tr>" +
+                      "<td width='33%'>" +
+                         person.details[i].first_name +
+                      "</td>";
+      display = display + 
+                      "<td width='34%'>" + 
+                         person.details[i].last_name + 
+                      "</td>";
+      display = display +
+                      "<td width='33%'>" +
+                         person.details[i].date_of_birth +
+                      "</td>"
+                    "</tr>"
+                  "</table>";
+      i++;
+     }
+    }
+  $(document).ready(function () {
+    procedure(person); 
+       $('#show_div').html(display);
+     });
+ </script>
+</html>
